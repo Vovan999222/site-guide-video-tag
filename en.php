@@ -99,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="container">
     <h2>Programming languages and repository link</h2>
     <p>Programming languages: html(81,3%), css(8,1%),javascript(10,6%).</p>
-    <p>Repository: <a href="https://mega.nz/folder/lH9gwDyD#nMdPeWMojdmuGnbGJkCsrw">click</a></p>
+    <p>Repository: <a href="https://github.com/Vovan999222/site-guide-video-tag">click</a></p>
 </section>
 
 <footer>
