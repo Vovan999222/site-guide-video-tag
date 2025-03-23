@@ -99,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="container">
     <h2>Языки програмирования и ссылка на репозиторий</h2>
     <p>Языки програмирования: html(81,3%), css(8,1%),javascript(10,6%).</p>
-    <p>Репозиторий: <a href="https://mega.nz/folder/lH9gwDyD#nMdPeWMojdmuGnbGJkCsrw">клик.com</a></p>
+    <p>Репозиторий: <a href="https://github.com/Vovan999222/site-guide-video-tag">клик.com</a></p>
 </section> 
 
 <footer>
