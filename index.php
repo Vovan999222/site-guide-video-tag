@@ -99,7 +99,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="container">
     <h2>Мови програмування та посилання на репозиторій</h2>
     <p>Мови програмування: html(81,3%), css(8,1%),javascript(10,6%).</p>
-    <p>Репозиторій: <a href="https://mega.nz/folder/lH9gwDyD#nMdPeWMojdmuGnbGJkCsrw">клік.com</a></p>
+    <p>Репозиторій: <a href="https://github.com/Vovan999222/site-guide-video-tag">клік.com</a></p>
     </section>  
 
     <footer>
