@@ -46,7 +46,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <select id="redirectSelect" onchange="redirect()">
         <option value="">Choose language</option>
         <option value="https://volodimir225.free.nf/">Ukraine</option>
-        <option value="ru.php">ru</option>
         <option value="en.php">English</option>
     </select>
     </div>
