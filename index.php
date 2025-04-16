@@ -45,8 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="language-switcher">
     <select id="redirectSelect" onchange="redirect()">
         <option value="">Оберіть мову</option>
-        <option value="https://volodimir225.free.nf/">Українська</option>
-        <option value="ru.php">російська</option> 
+        <option value="https://volodimir225.free.nf/">Українська</option> 
         <option value="en.php">Англійська</option>
     </select>
     </div>
