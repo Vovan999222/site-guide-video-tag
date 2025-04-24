@@ -234,7 +234,7 @@ $backgroundImage = ($currentMonth == 12 || $currentMonth <= 2)
     </section>
 
     <footer>
-        <p>&copy; <?= date('Y') ?> <?= htmlspecialchars($content['title'], ENT_QUOTES, 'UTF-8') ?></p>
+        <p>&copy; 2024-<?= date('Y') ?> <?= htmlspecialchars($content['title'], ENT_QUOTES, 'UTF-8') ?></p>
     </footer>
 
     <script>
