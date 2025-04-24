@@ -1,37 +1,40 @@
-const images = ["image/image-004.jpg", "image/image-005.jpg", "image/image-006.jpg", "image/image-007.png"];  // Додайте шляхи до ваших картинок
-let currentImageIndex = 0;
+let slideIndex = 0;
 
-function showImage(index) {
-    const displayedImage = document.getElementById('displayedImage');
-    displayedImage.src = images[index];
+function showSlide(index) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+    slides.style.transform = `translateX(${-index * 100}%)`;
+    slideIndex = index;
 }
 
-function prevImage() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    showImage(currentImageIndex);
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % document.querySelectorAll('.slide').length;
+    showSlide(slideIndex);
 }
 
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+    showSlide(slideIndex);
 }
 
-function openFullscreen() {
-    const displayedImage = document.getElementById('displayedImage');
-
-    if (displayedImage.requestFullscreen) {
-        displayedImage.requestFullscreen();
-    } else if (displayedImage.mozRequestFullScreen) { /* Firefox */
-        displayedImage.mozRequestFullScreen();
-    } else if (displayedImage.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-        displayedImage.webkitRequestFullscreen();
-    } else if (displayedImage.msRequestFullscreen) { /* IE/Edge */
-        displayedImage.msRequestFullscreen();
-    }
+function openFullscreenImage(src) {
+    const fullscreenDiv = document.createElement('div');
+    fullscreenDiv.className = 'fullscreen-image';
+    
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = 'Полноэкранный просмотр';
+    
+    fullscreenDiv.appendChild(img);
+    document.body.appendChild(fullscreenDiv);
+    
+    fullscreenDiv.addEventListener('click', function() {
+        document.body.removeChild(fullscreenDiv);
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    showImage(currentImageIndex);
+    showSlide(slideIndex);
 });
 
 function redirect() {
